@@ -229,7 +229,7 @@ class LessonRequestListCreateView(generics.ListCreateAPIView):
         # Veriyi kopyala ve düzenle
         data = request.data.copy()
 
-        # Öğrenciyi otomatik ata - BU SATIRI EKLEYİN
+        # Öğrenciyi otomatik ata
         data['student'] = request.user.id
 
         # Frontend'den gelen 'tutor' field'ını kontrol et
